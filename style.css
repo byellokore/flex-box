@@ -1,0 +1,74 @@
+* {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #B2DFDB;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #212121; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Make flex container*/
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    border: 1px solid #FFFFFF;
+    flex-grow: 1; /* grow flex items if necessary */
+    /*min-width: 100px;*/
+    /*flex-basis: auto; */
+    /* 
+    shorthand notation 
+      first flex-grow
+      second flex-shring
+      thrird flex-basis  
+
+      can also be flex: 1 basis will be default 0 not auto;
+    */
+    flex: 1 0 auto;
+}
+
+/*
+ grow can be applied for each flex item also.
+nav ul li:nth-of-type(3) {
+    flex-grow: 2 !important;
+}
+/*
+ shrink, default 1
+nav ul li:nth-of-type(3) {
+    flex-shrink: 2;
+}
+
+nav ul li:nth-of-type(4) {
+    flex-shrink: 4;
+}
+*/
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(34, 244, 146);
+}
+
+.flex-container {
+    display: flex;
+}
+
